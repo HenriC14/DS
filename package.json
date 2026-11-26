@@ -1,0 +1,31 @@
+{
+  "name": "encurtadordelink",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/MartinsDevStart/DS2#readme",
+  "bugs": {
+    "url": "https://github.com/MartinsDevStart/DS2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://https://github.com/guigosf/DS2.git"
+  },
+  "license": "ISC",
+  "author": "Henrique Rocha",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/server.js",
+    "start":"node ./src/server.js",
+    "openapi": "node ./scripts/generate-openapi.js",
+    "openapi:lint": "npx @redocly/cli lint ./src/docs/openapi.json"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "swagger-jsdoc": "^6.3.0",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
